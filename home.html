@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Project</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    input[type="text"], 
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      padding: 10px 16px;
+      margin: 5px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .btn-blue { background: #007bff; }
+    .btn-green { background: #28a745; }
+    .btn-indigo { background: #6610f2; }
+    .btn-red { background: #dc3545; }
+
+    /* Header */
+    header {
+      background: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header .points {
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    header h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    header .profile {
+      display: flex;
+      align-items: center;
+    }
+
+    header .profile img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+    }
+
+    /* Quiz Options */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    ul li button {
+      width: 100%;
+      background: #f4f4f9;
+      border: 1px solid #ccc;
+      color: #333;
+      text-align: left;
+      padding: 10px;
+    }
+
+    ul li button:hover {
+      background: #e9ecef;
+    }
+
+    /* Section spacing */
+    section {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="points">Points: <span id="points">0</span></div>
+    <h1>Quiz Game</h1>
+    <div class="profile">
+      <img src="https://via.placeholder.com/40" alt="profile">
+      <span>User</span>
+    </div>
+  </header>
+
+  <div class="container">
+    
+    <!-- Login Section -->
+    <section id="login">
+      <h2>Login</h2>
+      <form>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button type="button" class="btn-blue">Login</button>
+      </form>
+    </section>
+
+    <!-- Add Quiz Section -->
+    <section id="add-quiz">
+      <h2>Add Quiz</h2>
+      <form>
+        <input type="text" placeholder="Enter quiz question">
+
+        <!-- Options -->
+        <input type="text" placeholder="Option 1">
+        <input type="text" placeholder="Option 2">
+        <input type="text" placeholder="Option 3">
+        <input type="text" placeholder="Option 4">
+
+        <!-- Buttons -->
+        <button type="button" class="btn-green">Add Quiz</button>
+        <button type="button" class="btn-indigo">Show Quiz</button>
+      </form>
+    </section>
+
+    <!-- Show Quiz Section -->
+    <section id="show-quiz">
+      <h2>Quiz</h2>
+      <p>Here will be the quiz question...</p>
+      <ul>
+        <li><button>Option 1</button></li>
+        <li><button>Option 2</button></li>
+        <li><button>Option 3</button></li>
+        <li><button>Option 4</button></li>
+      </ul>
+
+      <button class="btn-blue">Submit</button>
+      <button class="btn-red">Reset</button>
+    </section>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz App</h1>
+        <button class="login-btn" id="openModal">Login</button>
+    </header>
+
+    <!-- Login Modal -->
+    <div class="modal" id="modalPopup">
+        <div class="modal-content" id="modalContent">
+            <h2>Login</h2>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <br>
+            <div class="buttons">
+                <button class="submit-btn" onclick="login()">Login</button>
+                <button class="close-btn" id="closeModal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <script src="JS/modal.js"></script>
+</body>
+</html>

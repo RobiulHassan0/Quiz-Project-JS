@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/quiz.css">
+</head>
+<body>
+    <header>
+        <h1>Points: </h1>
+        <div>সবগুলো প্রশ্নের উত্তর দিন</div>
+        <div class="user-profile" id="profile">User</div>
+    </header>
+    <main>
+    <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. HTML এর পূর্ণরূপ কী?</h3>
+            <div class="options">
+                <label class="option-card">
+                    <input type="radio" name="q1" value="a">
+                    <span>Hyperlinks and Text Markup Language</span>
+                </label>
+                <label class="option-card">
+                    <input type="radio" name="q1" value="b">
+                    <span>Home Tool Markup Language</span>
+                </label>
+                <label class="option-card">
+                    <input type="radio" name="q1" value="c">
+                    <span>Hyper Text Markup Language</span>
+                </label>
+                <label class="option-card">
+                    <input type="radio" name="q1" value="d">
+                    <span>Hyperlinking Text Management Language</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+        <h3>2. CSS এর কাজ কী?</h3>
+        <div class="options">
+            <label class="option-card">
+                <input type="radio" name="q2" value="a">
+                <span>ওয়েবসাইটের গঠন তৈরি করা</span>
+            </label>
+            <label class="option-card">
+                <input type="radio" name="q2" value="b">
+                <span>ওয়েবসাইটে ডাটা সংরক্ষণ করা</span>
+            </label>
+            <label class="option-card">
+                <input type="radio" name="q2" value="c">
+                <span>ওয়েবসাইটকে স্টাইল করা</span>
+            </label>
+            <label class="option-card">
+                <input type="radio" name="q2" value="d">
+                <span>ওয়েবসাইটে লজিক লিখা</span>
+            </label>
+        </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Quiz</button>
+    </form>
+    </main>
+
+
+    <!-- QUIZ Javascript -->
+    <script src="JS/quiz.js"></script>
+</body>
+</html>
